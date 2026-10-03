@@ -58,6 +58,7 @@ builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<IPaymentService, StripePaymentService>();
 
 // 5. Exception Handling
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();

@@ -23,5 +23,7 @@ namespace SalesInventoryManagement.Domain.Entities
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
 
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+        public string? PaymentIntentId { get; set; }
+        public string? PaymentStatus { get; set; }
     }
 }
